@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int COL,i,j,x,y,z;
+    printf("Enter the number of columns you want: ");
+    scanf("%d",&COL);
+    for(i=1;i<=COL;i++)
+    {
+        for(j=COL-1;j>=i;j--)
+        {
+            printf("  ");
+        }
+        
+        for(x=1;x<=i;x++)
+            {
+                printf("* ");
+            }
+            
+        for(y=0;y<=i-2;y++)
+        {
+           printf("* "); 
+        }
+        
+        for(z=COL-1;z>=i;z--)
+        {
+            printf("  ");
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
